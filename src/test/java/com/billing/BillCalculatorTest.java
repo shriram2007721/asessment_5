@@ -1,7 +1,7 @@
 package com.billing;
 
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
 public class BillCalculatorTest {
 
@@ -19,7 +19,7 @@ public class BillCalculatorTest {
 
     @Test
     public void testOverageUsage() {
-        // Standard limit: 150GB. Overage: 10GB * $1.50 = $15. Total = $35
+        // Standard limit: 150GB. Overage: 10GB * $1.50 = $15. Total Base ($20) + $15 = $35
         double bill = BillCalculator.calculateTotalBill(Plan.STANDARD, 160.0);
         assertEquals(35.0, bill, 0.001);
     }

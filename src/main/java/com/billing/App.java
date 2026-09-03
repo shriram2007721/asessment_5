@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.util.System.in);
+        Scanner scanner = new Scanner(System.in);
+
         System.out.println("=== Internet Data Usage Billing System ===");
         
         while (true) {
